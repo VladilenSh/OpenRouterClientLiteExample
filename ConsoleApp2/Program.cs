@@ -1,8 +1,8 @@
-﻿using OpenRouterClientNet9;
-using OpenRouterClientNet9.Models;
+﻿using OpenRouterClientLite;
+using OpenRouterClientLite.Models;
 
 // Создание клиента с обязательным API ключом
-var client = new OpenRouterClient("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");
+var client = new OpenRouterClient("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");
 
 // Дополнительно можно указать название приложения и URL сайта
 var clientWithHeaders = new OpenRouterClient(
