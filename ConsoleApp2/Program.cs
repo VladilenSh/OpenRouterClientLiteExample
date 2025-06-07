@@ -11,6 +11,9 @@ try
     foreach (var model in models)
     {
         Console.WriteLine($"ID: {model.Id}, Name: {model.Name}");
+        Console.WriteLine($"Description: {model.Description}");
+        Console.WriteLine($"Pricing: {model.Pricing.Prompt} (prompt) / {model.Pricing.Completion} (completion)");
+        Console.WriteLine();
     }
 }
 catch (Exception ex)
@@ -27,6 +30,8 @@ try
 
     var responseContent = response.ChatCompletionChoice[0].GeneratedMessage.Content;
     Console.WriteLine(responseContent);
+    var usage = response.UsageTokens;
+    Console.WriteLine($"Tokens used: {usage.PromptTokens} (prompt) + {usage.CompletionTokens} (completion) = {usage.TotalTokens}");
 }
 catch (Exception ex)
 {
