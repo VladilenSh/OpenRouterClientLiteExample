@@ -1,14 +1,10 @@
 ﻿using OpenRouterClientLite;
-using OpenRouterClientLite.Models;
+//using OpenRouterClientLite.Models;
 
 // Создание клиента с обязательным API ключом
-var client = new OpenRouterClient("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");
+using var client = new OpenRouterClient("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", "OpenRouterClientNet9", "https://hd0.ru");
 
 // Дополнительно можно указать название приложения и URL сайта
-var clientWithHeaders = new OpenRouterClient(
-    "your-api-key-here",
-    appName: "MyAwesomeApp",
-    siteUrl: "https://myapp.com");
 try
 {
     var models = await client.GetModelsAsync();
@@ -22,14 +18,15 @@ catch (Exception ex)
     Console.WriteLine($"Error: {ex.Message}");
 }
 try
-{
+{    
     var response = await client.GenerateResponseAsync(
         model: "deepseek/deepseek-chat:free",
         prompt: "Привет! Как дела?",
         temperature: 0.7,
         maxTokens: 100);
 
-    Console.WriteLine(response.ChatCompletionChoice[0].GeneratedMessage.Content);
+    var responseContent = response.ChatCompletionChoice[0].GeneratedMessage.Content;
+    Console.WriteLine(responseContent);
 }
 catch (Exception ex)
 {

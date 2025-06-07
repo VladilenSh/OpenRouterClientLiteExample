@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenRouterClientLite" Version="1.0.1" />
-    <PackageReference Include="RabbitMQ.Client" Version="7.1.2" />
+    <PackageReference Include="OpenRouterClientLite" Version="1.0.4" />
   </ItemGroup>
 
 </Project>
