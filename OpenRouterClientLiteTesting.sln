@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58
+VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRouterClientLiteTesting", "ConsoleApp2\OpenRouterClientLiteTesting.csproj", "{79D2AD6B-8DA5-4B14-8337-4FFB872C265B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRouterClientLiteTesting", "OpenRouterClientLiteExample\OpenRouterClientLiteTesting.csproj", "{F5E72716-7165-6CE0-885A-847877D9147B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79D2AD6B-8DA5-4B14-8337-4FFB872C265B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79D2AD6B-8DA5-4B14-8337-4FFB872C265B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79D2AD6B-8DA5-4B14-8337-4FFB872C265B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79D2AD6B-8DA5-4B14-8337-4FFB872C265B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E72716-7165-6CE0-885A-847877D9147B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E72716-7165-6CE0-885A-847877D9147B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E72716-7165-6CE0-885A-847877D9147B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E72716-7165-6CE0-885A-847877D9147B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E23624CD-0BCA-4773-ACF1-939A3FCA4951}
+		SolutionGuid = {3BAD6ED7-6603-46F4-B198-AE37A44FD859}
 	EndGlobalSection
 EndGlobal
